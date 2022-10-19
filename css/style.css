@@ -1,0 +1,982 @@
+/* -------------==============================----------------------
+Design &  Develope by 
+Name     :     Nafiz Mohammad Hannan
+Phone    :     +8801321081623
+Email    :     nafizmh20+work@gmail.com
+fiverr   :     https://www.fiverr.com/nafizmh
+website clone from : https://www.free-css.com/free-css-templates
+-------------==============================---------------------- */
+
+/* -------------==============================----------------------
+google font import
+-------------==============================---------------------- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+/* -----------if needer font-family: 'Roboto',sans-serif; ------ */
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+
+/* -------------==============================----------------------
+common css
+-------------==============================---------------------- */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.mob-nav {
+  display: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container-fulid {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-menu {
+  color: #c2a20e !important;
+  font-weight: 600;
+}
+
+.titel {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.titel h1 {
+  color: #fefeff;
+  font-size: 2.875rem;
+  padding-top: 3.5rem;
+}
+
+.titel h1::after {
+  content: "";
+  width: 120px;
+  border-radius: 12px;
+  border: 10px solid #c2a20e;
+  position: absolute;
+  top: 9rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.titel p {
+  font-size: 1rem;
+  color: white;
+  margin: 3rem 0rem;
+}
+
+.inner-slider img,
+#story img {
+  width: 1157px;
+  max-width: 100%;
+}
+
+/* -------------==============================----------------------
+header area css
+-------------==============================---------------------- */
+
+/* -------------top header -------------------- */
+header {
+  clear: both;
+  width: 100%;
+}
+
+.top-header i,
+a {
+  color: #c2a20e;
+}
+
+.top-header {
+  background-color: #1c1c1c;
+  width: 100%;
+  height: auto;
+}
+
+.inner-top-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+/* ---------left-side-menu--------------- */
+.inner-top-header .left-side-menu,
+.right-side-menu {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.inner-top-header .left-side-menu ul,
+.right-side-menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-top-header .left-side-menu ul li,
+.right-side-menu ul li {
+  padding: 0px 15px;
+}
+
+.inner-top-header .left-side-menu ul li i,
+.right-side-menu ul li i {
+  padding: 0px 8px;
+}
+
+/* -------------main header -------------------- */
+.main-header {
+  clear: both;
+  width: 100%;
+  background: #fff;
+}
+
+.inner-main-header {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.inner-main-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-main-header ul li {
+  padding: 0px 20px;
+}
+
+.inner-main-header ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.inner-main-header ul li:hover a {
+  color: #c2a20e;
+}
+
+/* -------------==============================----------------------
+hero area css
+-------------==============================---------------------- */
+.swiper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../pic/banner-bg.png);
+  background-position: center center;
+  background-size: auto;
+  /* z-index: -1; */
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.inner-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.inner-slider .img {
+  padding: 1.5rem;
+}
+
+.inner-slider .info {
+  padding: 1.5rem;
+}
+
+.inner-slider .info h2 {
+  font-size: 3.375rem;
+  color: white;
+  font-weight: bold;
+  margin: 0rem 0rem;
+}
+
+.inner-slider .info h6 {
+  font-size: 1.25rem;
+  color: #dcb916;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.inner-slider .info p {
+  font-size: 1rem;
+  margin: 3rem 0rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.inner-slider .info button {
+  padding: 14px 3px;
+  font-size: 16px;
+  color: #1c1c1c;
+  background-color: #c2a20e;
+  font-family: "Rajdhani", sans-serif;
+  transition: 0.3s;
+  font-weight: 500;
+  border: none;
+}
+
+.inner-slider .info button:hover {
+  color: #c2a20e !important;
+  background-color: white;
+}
+
+.inner-slider .info button:hover {
+  color: #1c1c1c;
+  background-color: #fff;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
+  left: 123px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width,
+      var(--swiper-pagination-bullet-size, 18px));
+  height: var(--swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 18px));
+  display: inline-block;
+  border-radius: 50%;
+  background: white;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: yellow;
+}
+
+/* -------------==============================----------------------
+story area css
+-------------==============================---------------------- */
+
+#story {
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  margin-top: -21px;
+  /* z-index: 1; */
+  background: white;
+}
+
+.inner-story-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-story-section .left-col,
+.inner-story-section .right-col {
+  width: 50%;
+  padding: 1.5625rem;
+  margin: 5rem 0rem;
+}
+
+.inner-story-section .left-col h6 {
+  color: #f6cb0a;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+
+.inner-story-section .left-col h2 {
+  color: black;
+  font-size: 3rem;
+  padding: 1rem 0rem;
+}
+
+.inner-story-section .left-col p {
+  color: black;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  line-height: 1.2;
+}
+
+.inner-story-section .left-col button {
+  color: black;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+  line-height: 1.2;
+  background-color: #c2a20e;
+  transition: 0.3s;
+  border: none;
+}
+
+.inner-story-section .left-col button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* -------------==============================----------------------
+service area css
+-------------==============================---------------------- */
+#service {
+  width: 100%;
+  background-image: url(../pic/service-bg.png);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+}
+
+.inner-serve {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-serve .serve-child-box {
+  width: 50%;
+  text-align: center;
+  padding: 3rem 3rem;
+}
+
+.inner-serve .serve-child-box img {
+  max-width: 100%;
+}
+
+.inner-serve .serve-child-box h1 {
+  color: white;
+  padding: 0.3125rem 0rem 2rem;
+}
+
+.inner-serve .serve-child-box p {
+  color: white;
+  line-height: 1.2;
+  margin: 0rem 0rem 2.3rem;
+}
+
+.inner-serve .serve-child-box button {
+  color: white;
+  background: #c2a20e;
+  color: black;
+  padding: 15px 30px;
+  transition: 0.4s;
+  border: none;
+}
+
+.inner-serve .serve-child-box button:hover {
+  color: white;
+  background: white;
+  color: black;
+  padding: 15px 30px;
+}
+
+/* -------------==============================----------------------
+offer area css
+-------------==============================---------------------- */
+
+#offer {
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+}
+
+.inner-offer-area {
+  position: relative;
+  background: yellow;
+}
+
+.inner-offer-area::before {
+  content: "";
+  position: absolute;
+  height: 115px;
+  width: 12%;
+  float: left;
+  right: -6%;
+  margin-top: -54px;
+  z-index: 1;
+  border: 21px solid;
+  border-left: none;
+  border-bottom: none;
+}
+
+.inner-offer-area::after {
+  content: "";
+  position: absolute;
+  height: 115px;
+  width: 12%;
+  float: left;
+  left: -6%;
+  bottom: -15%;
+  z-index: 1;
+  border: 21px solid;
+  border-right: none;
+  border-top: none;
+}
+
+.inner-offer-area .info {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+  height: auto;
+  padding: 0px 32px;
+  margin: 6rem 0rem;
+}
+
+.inner-offer-area .info h2 {
+  width: 100%;
+  float: left;
+  font-size: 46px;
+  color: #fefeff;
+  padding: 15px 0px;
+  text-align: left;
+  font-family: "Baloo Chettan", cursive;
+}
+
+.inner-offer-area .info strong {
+  width: 100%;
+  float: left;
+  font-size: 36px;
+  color: #0b0b0b;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.inner-offer-area .info h3 {
+  width: 100%;
+  float: left;
+  font-size: 44px;
+  color: #fffeff;
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.inner-offer-area .info .left-col {
+  width: 70%;
+}
+
+.inner-offer-area .info .right-col {
+  width: 30%;
+}
+
+.inner-offer-area .info .right-col img {
+  /* width: 100%; */
+  max-width: 280px;
+}
+
+/* -------------==============================----------------------
+testmonial area css
+-------------==============================---------------------- */
+#testmo {
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+
+.inner-testmo {
+  display: flex;
+  width: 100%;
+  padding: 3rem 0rem;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-testmo .row1,
+.inner-testmo .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  transition: 0.3s;
+}
+
+.inner-testmo .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  left: -9999px;
+  transition: 0.3s;
+}
+
+.inner-testmo .row1 .left-col,
+.row2 .left-col {
+  width: 50%;
+  background-color: #1c1c1c;
+  margin: 0px 20px;
+  padding: 20px;
+  color: white;
+}
+
+.inner-testmo .row1 .right-col,
+.row2 .right-col {
+  width: 50%;
+  background-color: #1c1c1c;
+  color: white;
+  margin: 0px 20px;
+  padding: 20px;
+}
+
+.active .inner-testmo .row1 {
+  position: absolute;
+  left: -9999px !important;
+  transition: 0.3s;
+}
+
+.active .inner-testmo .row2 {
+  position: absolute;
+  left: 0px !important;
+  transition: 0.3s;
+}
+
+.button-group-testmo {
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.button-group-testmo .left-arrow {
+  position: absolute;
+  top: 150px;
+  left: -40px;
+  color: white;
+  padding: 15px;
+  background-color: black;
+}
+
+.button-group-testmo .right-arrow {
+  position: absolute;
+  top: 150px;
+  right: -40px;
+  color: white;
+  padding: 15px;
+  background-color: black;
+}
+
+.inner-testmo .left-col strong,
+.inner-testmo .right-col strong {
+  border-bottom: 1px solid yellow;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.inner-testmo .left-col p,
+.inner-testmo .right-col p {
+  margin-top: 20px;
+  padding-bottom: 5px;
+  line-height: 1.8;
+}
+
+/* -------------==============================----------------------
+contact area css
+-------------==============================---------------------- */
+
+.contact {
+  overflow: hidden;
+}
+
+.contact .inner-contact {
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-contact .left-col,
+.inner-contact .right-col {
+  width: 50%;
+  padding: 25px;
+}
+
+.inner-contact .left-col form {
+  width: 100%;
+}
+
+.inner-contact .left-col form input,
+.inner-contact .left-col form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid yellow;
+  margin: 35px 0px;
+  padding: 10px;
+}
+
+.inner-contact .left-col form input[type=submit] {
+  width: 40%;
+  padding: 15px 30px;
+  border: none;
+  background: yellow;
+  margin: auto;
+  display: block;
+  transition: 0.3s;
+}
+
+.inner-contact .left-col form input[type=submit]:hover {
+  color: #fff;
+  background: black;
+  transition: 0.3s;
+}
+
+.inner-contact .right-col ul li {
+  padding: 60px 0px;
+  font-size: 1.8rem;
+}
+
+.inner-contact .right-col ul li i {
+  padding: 0px 15px;
+  font-size: 2.4rem;
+}
+
+/* -------------==============================----------------------
+join Us area css
+-------------==============================---------------------- */
+.joinus {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.inner-joinus {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+}
+
+.inner-joinus h1 {
+  width: 50%;
+  font-size: 2rem;
+  padding: 45px 0px;
+  text-align: center;
+}
+
+.inner-joinus button {
+  font-size: 1rem;
+  padding: 15px 40px;
+  background: black;
+  color: white;
+  margin-left: 20%;
+  border: none;
+  transition: 0.3s;
+}
+
+.inner-joinus button:hover {
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+footer {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px 0px;
+}
+
+.inner-footer {
+  padding: 40px 0px;
+}
+
+.inner-footer .icon ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0px;
+}
+
+.inner-footer .icon ul li {
+  padding: 0px 15px;
+
+}
+
+.inner-footer .icon ul li a {
+  padding: 12px 14px;
+  background: white;
+  border-radius: 50%;
+  color: black;
+  background: white;
+  transition: 0.3s;
+}
+
+.inner-footer .icon ul li a:hover {
+  color: white;
+  background: black;
+  transition: 0.3s;
+}
+
+.inner-footer .info p {
+  text-align: center;
+  margin: 0px 200px;
+  margin-top: 3rem;
+}
+
+.copyright {
+  padding: 20px 0px;
+}
+
+.copyright h5 {
+  text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width:890px) {
+
+  .mob-nav {
+    display: block;
+  }
+
+  .inner-top-header .left-side-menu,
+  .right-side-menu {
+    display: none;
+  }
+
+  .top-header {
+    overflow: hidden;
+  }
+
+  .inner-top-header .logo-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .inner-main-header ul {
+    display: none;
+  }
+
+  .main-header {
+    position: relative;
+    transition: 0.3s;
+    height: 40px;
+    overflow: hidden;
+    width: 20%;
+    transition: 0.5s;
+  }
+
+  .main-header .mob-nav {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+  }
+
+  .main-header .mob-nav i {
+    border: 1px solid;
+    padding: 5px;
+  }
+
+  .main-header .mob-nav i:last-child {
+    display: none;
+  }
+
+  .active .mob-nav i:last-child {
+    display: block;
+  }
+
+  .active .mob-nav i {
+    display: none;
+    padding: 5px 7px;
+  }
+
+  .active .inner-main-header ul {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+
+  }
+
+  .active .inner-main-header ul li {
+    display: block;
+    padding: 10px 0px;
+    background: lightgray;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .active {
+    height: 340px;
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .swiper {
+    height: 120vh;
+  }
+
+  .inner-slider {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical>.swiper-pagination-bullets {
+    left: 23px;
+  }
+
+  .inner-story-section {
+    display: block;
+    text-align: center;
+  }
+
+  .inner-story-section .left-col,
+  .inner-story-section .right-col {
+    width: 100%;
+  }
+
+  .inner-serve {
+    display: block;
+    text-align: center;
+  }
+
+  .inner-serve .serve-child-box {
+    width: 100%;
+  }
+
+  .inner-offer-area::before,
+  .inner-offer-area::after {
+    display: none;
+  }
+
+  .inner-offer-area .info {
+    display: block;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 6rem 0rem;
+  }
+
+  .inner-offer-area .info .left-col,
+  .inner-offer-area .info .right-col {
+    width: 100%;
+  }
+
+  .inner-offer-area .info h2 {
+    font-size: 33px;
+    text-align: center;
+  }
+
+  .inner-offer-area .info strong {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .inner-offer-area .info h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .inner-offer-area .info .right-col img {
+    text-align: center;
+    margin: auto;
+    margin-left: 40px;
+  }
+
+  .inner-testmo {
+    height: 100vh;
+  }
+
+  .inner-testmo .row1,
+  .inner-testmo .row {
+    display: block;
+  }
+
+  .inner-testmo .row1 .left-col,
+  .inner-testmo .row2 .left-col {
+    width: 100%;
+    background-color: #1c1c1c;
+    margin: 0px 20px;
+    padding: 20px;
+    color: white;
+  }
+
+  .inner-testmo .row1 .right-col,
+  .inner-testmo .row2 .right-col {
+    width: 100%;
+    background-color: #1c1c1c;
+    margin: 0px 20px;
+    padding: 20px;
+    color: white;
+  }
+
+  .testmo {
+    display: none;
+  }
+
+  .contact .inner-contact {
+    display: block;
+  }
+
+  .inner-contact .left-col,
+  .inner-contact .right-col {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .inner-contact .right-col ul {
+    display: none;
+  }
+
+  .inner-joinus {
+    display: block;
+  }
+
+  .inner-joinus h1 {
+    width: 100%;
+    font-size: 2rem;
+    padding: 45px 0px;
+    text-align: center;
+  }
+
+  .inner-joinus button {
+    font-size: 1rem;
+    padding: 15px 40px;
+    background: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .inner-footer .info p {
+    text-align: center;
+    margin: 0px 0px;
+    margin-top: 3rem;
+  }
+}
