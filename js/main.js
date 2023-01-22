@@ -1,3 +1,9 @@
+var loader = document.getElementById("loader");
+
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+})
+
 const mobilebtn1 = document.querySelector(".button-group-testmo");
 const nav_header1 = document.querySelector(".testmo");
 const show_hide1 = () => {
